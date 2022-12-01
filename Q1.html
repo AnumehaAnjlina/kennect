@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The children Property</h2>
+
+<p>Change background of the second child element of "John":</p>
+
+<div id="John">
+  <p>I am a paragraph</p>
+  <p>I am a paragraph</p>
+  <p>I am a paragraph</p>
+</div>
+
+<p>Change background of the second child element of "Rob":</p>
+
+<div id="Rob">
+  <p>I am a Rob paragraph</p>
+  <p>I am a Rob paragraph</p>
+  <p>I am a Rob paragraph</p>
+</div>
+
+<script>
+const collection = document.getElementById("John").children;
+for (let i = 0; i < collection.length; i++) {
+    collection[i].style.backgroundColor = "yellow";
+  }
+</script>
+
+</body>
+</html>
